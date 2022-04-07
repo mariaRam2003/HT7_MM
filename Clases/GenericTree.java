@@ -1,6 +1,7 @@
 /**
  * Hoja de Trabajo 7
- * Maria Marta Ramirez - 21342
+ * @author Maria Marta Ramirez
+ * Carne 21342
  * Algoritmos y Estructura de Datos
  * 
  * Clase Generic Binary Search Tree
