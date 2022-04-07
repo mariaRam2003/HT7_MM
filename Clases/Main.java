@@ -24,8 +24,8 @@ public class Main{
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Ingrese el archivo con los datos");
-            //String directory = scanner.nextLine();
-            String directory = "C:\\Users\\maria\\Documents\\UVG\\Algoritmos y Estructuras de Datos\\HT7_MM\\diccionario.txt";
+            String directory = scanner.nextLine();
+            //String directory = "C:\\Users\\maria\\Documents\\UVG\\Algoritmos y Estructuras de Datos\\HT7_MM\\diccionario.txt";
             BufferedReader reader = new BufferedReader(new FileReader(directory));
             String line;
             while ((line = reader.readLine()) != null){
