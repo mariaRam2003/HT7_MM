@@ -13,10 +13,7 @@
 
 import static org.junit.Assert.assertEquals;
 import java.io.FileReader;
-import java.util.ArrayList;
 import java.io.BufferedReader;
-
-import org.junit.Test;
 
 public class TestBTree{
     /**
