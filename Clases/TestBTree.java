@@ -20,7 +20,9 @@ import java.io.BufferedReader;
 
 
 public class TestBTree{
-    @Test
+    /**
+     * @Test
+     */
     public void searchTest(){
         GenericTree Ingles = new GenericTree();
 
@@ -54,6 +56,20 @@ public class TestBTree{
         assertEquals(result3, true);
     }
 
-    private void assertEquals(boolean result1, boolean b) {
+    /**
+     * @Test
+     */
+    public void getValueTest() {
+        GenericTree Ingles = new GenericTree();
+        Ingles.insert("house", "casa");
+        Ingles.insert("town", "pueblo");
+        Ingles.insert("and", "y");
+        Ingles.insert("gift", "regalo");
+        assertEquals((String)Ingles.getValue("house"), "casa");
+        assertEquals((String)Ingles.getValue("town"), "pueblo");
+        assertEquals((String)Ingles.getValue("and"), "y");
+        assertEquals((String)Ingles.getValue("gift"), "regalo");
+        assertEquals(Ingles.getValue("summer"), null); 
+
     }
 }
