@@ -11,13 +11,12 @@
  * 
  * */
 
-
-//import org.junit.Test;
- //import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.io.BufferedReader;
 
+import org.junit.Test;
 
 public class TestBTree{
     /**
@@ -70,6 +69,15 @@ public class TestBTree{
         assertEquals((String)Ingles.getValue("and"), "y");
         assertEquals((String)Ingles.getValue("gift"), "regalo");
         assertEquals(Ingles.getValue("summer"), null); 
-
+    }
+    /**
+     * @Test 
+     */
+    public void deleteTest() {
+        GenericTree Ingles = new GenericTree();
+        Ingles.insert("house", "casa");
+        Ingles.insert("town", "pueblo");
+        Ingles.delete("town");
+        assertEquals(Ingles.contains("yes"), false);
     }
 }
