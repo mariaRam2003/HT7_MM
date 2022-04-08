@@ -14,15 +14,31 @@ public class Association<V,K> {
         key = KEY;
         value = VALUE;
     }
+
+    /**
+     * @return llave
+     */
     public V getKey() {
         return key;
     }
+
+    /**
+     * @return valor
+     */
     public K getValue() {
         return value;
     }
+
+    /**
+     * @param key
+     */
     public void setKey(V key) {
         this.key = key; 
     }
+
+    /**
+     * @param value
+     */
     public void setValue(K value) {
         this.value = value;
     }
